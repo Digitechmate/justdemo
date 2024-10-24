@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 id="emp"></h1>
+    
+
+    <script>
+
+
+
+
+
+
+            let emp = {
+
+                name:"hari",
+                age:30,
+                india:true,
+                salary: 3333,
+               'blood-group': 'A+',
+
+                hobbies:['game', 'cricket', 'tv', 'songs'],
+
+
+                company:{
+
+                    com:'hcl',
+                    com2:'ibm',
+
+                }
+
+            }
+            
+           let empData  =  document.querySelector('#emp') 
+           console.log(empData);
+
+            let {name, salary ,india ,hobbies, company}  = emp
+
+            name =  "india"
+
+            // let {com, com2} =  company
+
+            console.log(name);
+
+            for(h of hobbies){
+
+                console.log(`hobbies here ${h}`);
+                empData.innerHTML = h
+            }
+
+
+            let hdata  =  hobbies.map((itmes, i) =>{
+
+             
+
+                return itmes
+            })
+
+            console.log(hdata);
+
+        
+         
+
+        //     console.log(emp.name);
+        //     console.log(emp.india);
+            console.log(emp['blood-group']);
+
+            console.log(emp);
+            console.log(salary);
+            console.log(emp.hobbies[2]);
+            console.log(hobbies);
+            // console.log(company);
+            // console.log(emp.company.com);
+        //     console.log(com);
+        //     console.log(com2);
+
+
+        // let empdetails = document.querySelector('#emp')
+        // console.log(empdetails);
+
+        // empdetails.innerHTML = india + com
+
+        // ===========================================Loop======================
+       
+
+        
+            // let emp3 = {
+
+            //     name:"hari",
+            //     age:30,
+            //     india:true,
+            //     salary: 3333,
+            //     'blood-group': 'A+',
+            //                 }
+
+
+
+            //                 let res  =  Object.entries(emp3)
+            //                 console.log(res);
+
+
+            //                 for( [r, m]  of res){
+
+            //                     console.log(`here ${r} and ${m}`);
+            //                 }
+
+            // for(i of emp3){
+
+            //     console.log(i);
+            // }     
+
+
+
+// =============================
+
+        // let username  =  "aakash"
+
+        // for(let i = 0;  i<username.length; i++){
+
+        //     console.log(username[i]);
+        // }
+
+        // console.log(username.length);
+
+
+
+        
+
+    </script>
+</body>
+</html>

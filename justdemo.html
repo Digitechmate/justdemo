@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Multiple Divs Example</title>
+</head>
+<body>
+
+<button id="createButton">Create 5 Divs</button>
+
+<script>
+    document.getElementById('createButton').addEventListener('click', function() {
+      
+       
+        // Loop to create multiple divs
+        for (let i = 1; i <= 5; i++) {
+            // Create a new div element
+            const newDiv = document.createElement('div');
+            console.log(newDiv);
+            
+            // Set the text content of the new div
+            newDiv.textContent = `Hello, this is div number ${i}!`;
+
+            // Optionally, set some styles
+            newDiv.style.border = '1px solid black';
+            newDiv.style.padding = '10px';
+            newDiv.style.marginTop = '10px';
+            newDiv.style.backgroundColor = '#f0f0f0'; // Light background for visibility
+            
+            // Append the new div to the body
+            document.body.appendChild(newDiv);
+        }
+    });
+</script>
+
+</body>
+</html>

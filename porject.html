@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+
+<h1 id="heading"></h1>
+<body>
+    
+
+    <script>
+
+
+                let header   = [
+
+                {
+                    heading : "JavaScript Method",
+                    text: "A JavaScript method is a function defined within an object. For example,"
+
+                },
+                {
+                    heading : "Add Methods to an Object",
+                    text: "You can add more methods to a JavaScript object even after we've defined it. For example,"
+
+                },
+                {
+                    heading : "Destructuring assignment",
+                    text: "You can add more methods to a JavaScript object even after we've defined it. For example,"
+
+                },
+                ]
+
+
+            let res   =  header.map((items, i)=>{
+
+                let {heading , text}  = items
+
+
+
+                return(
+
+           text
+            //    console.log( items.text)
+                )
+            })
+
+
+            console.log(res);
+
+
+            let data    = document.querySelector('#heading')
+
+            for(a  of res){
+
+                data.innerHTML   = a
+            }
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>
